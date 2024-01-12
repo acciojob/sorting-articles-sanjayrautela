@@ -2,7 +2,7 @@
 const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
 
 
-const list = document.createElement("ul");
+const list = document.getElementbyID("band");
 
 var comp = function (a, b) {
   let aTitle = a.toLowerCase(),
@@ -33,5 +33,5 @@ for (let x of arr) {
   list.appendChild(t);
 }
 
-document.querySelector("main").appendChild(list);
+// document.querySelector("main").appendChild(list);
 
